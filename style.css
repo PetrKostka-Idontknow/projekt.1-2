@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #252923;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  color: #315f48;
+}
+
+a:hover {
+  color: #1d3e2d;
+}
+
+.container {
+  width: min(100% - 40px, 960px);
+  margin: 0 auto;
+}
+
+.site-header {
+  border-bottom: 1px solid #e5e8e3;
+}
+
+.navigation {
+  display: flex;
+  min-height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  color: #252923;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navigation-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.navigation-links a {
+  color: #414840;
+  text-decoration: none;
+}
+
+.navigation-links a:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.eyebrow {
+  margin-bottom: 8px;
+  color: #647068;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(40px, 7vw, 62px);
+}
+
+h1 span {
+  color: #477859;
+}
+
+.intro-text {
+  max-width: 530px;
+  margin: 20px 0 26px;
+  color: #555d56;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 16px;
+  border-radius: 4px;
+  background: #315f48;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #1d3e2d;
+  color: #fff;
+}
+
+.section {
+  padding: 64px 0;
+}
+
+.section-muted {
+  background: #f4f6f2;
+}
+
+h2 {
+  margin: 0 0 28px;
+  font-size: 30px;
+}
+
+.places {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.place {
+  overflow: hidden;
+  border: 1px solid #e0e4de;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.place-image {
+  height: 145px;
+  background-color: #dce8da;
+}
+
+.place-prague {
+  background:
+    linear-gradient(145deg, transparent 46%, #a85f45 47% 67%, transparent 68%),
+    linear-gradient(35deg, #d7e6d1 0 46%, #f0dfb9 47% 67%, #d9e5d5 68%);
+}
+
+.place-krumlov {
+  background:
+    radial-gradient(ellipse at 48% 96%, #7c9b87 0 21%, transparent 22%),
+    linear-gradient(155deg, transparent 42%, #b86c4d 43% 58%, transparent 59%),
+    linear-gradient(20deg, #b6d1c1 0 40%, #e6d5ad 41% 61%, #dce8da 62%);
+}
+
+.place-mountains {
+  background:
+    radial-gradient(circle at 75% 25%, #f5dfa1 0 10%, transparent 10.5%),
+    linear-gradient(145deg, transparent 48%, #819b83 49% 68%, transparent 69%),
+    linear-gradient(35deg, #9bb6a3 0 37%, #dce8da 38% 56%, #b4c8b5 57%);
+}
+
+.place-content {
+  padding: 18px;
+}
+
+.place-category {
+  margin-bottom: 7px;
+  color: #647068;
+  font-size: 13px;
+}
+
+.place h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.place-content > p:not(.place-category) {
+  min-height: 78px;
+  margin-bottom: 14px;
+  color: #555d56;
+  font-size: 14px;
+}
+
+.place a {
+  font-size: 14px;
+}
+
+.plan {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 50px;
+}
+
+.plan h2 {
+  margin-bottom: 0;
+}
+
+.checklist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.checklist li {
+  padding: 13px 0;
+  border-bottom: 1px solid #e5e8e3;
+}
+
+.checklist li:first-child {
+  border-top: 1px solid #e5e8e3;
+}
+
+.checklist span {
+  display: inline-block;
+  width: 42px;
+  color: #477859;
+  font-size: 13px;
+}
+
+.site-footer {
+  padding: 25px 0;
+  border-top: 1px solid #e5e8e3;
+  background: #f9faf8;
+}
+
+.footer-content > p {
+  color: #59615a;
+  font-size: 13px;
+}
+
+.validators {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .places {
+    grid-template-columns: 1fr;
+  }
+
+  .place-image {
+    height: 170px;
+  }
+
+  .place-content > p:not(.place-category) {
+    min-height: auto;
+  }
+
+  .plan {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 560px) {
+  .navigation {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px 0;
+  }
+
+  .navigation-links {
+    gap: 18px;
+    font-size: 14px;
+  }
+
+  .intro {
+    padding-top: 68px;
+    padding-bottom: 75px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

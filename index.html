@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jednoduché tipy na výlety po Česku.">
+    <title>Výlety po Česku</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container navigation" aria-label="Hlavní navigace">
+        <a class="brand" href="#domu">Výlety po Česku</a>
+        <div class="navigation-links">
+          <a href="#tipy">Tipy na výlet</a>
+          <a href="#naplanovat">Naplánovat</a>
+          <a href="#zdroje">Zdroje</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container intro" id="domu">
+        <p class="eyebrow">Inspirace na volný den</p>
+        <h1>Vyraz ven.<br><span>Objevuj Česko.</span></h1>
+        <p class="intro-text">
+          Příroda, výhledy i krásná města. Vyber si místo, které tě láká,
+          a naplánuj si svůj další výlet.
+        </p>
+        <a class="button" href="#tipy">Najít inspiraci <span aria-hidden="true">↓</span></a>
+      </section>
+
+      <section class="section section-muted" id="tipy">
+        <div class="container">
+          <p class="eyebrow">Kam vyrazit</p>
+          <h2>Tři nápady na výlet</h2>
+          <div class="places">
+            <article class="place">
+              <div class="place-image place-prague" role="img" aria-label="Ilustrace střech města"></div>
+              <div class="place-content">
+                <p class="place-category">Město · Praha</p>
+                <h3>Pražské staré město</h3>
+                <p>Procházka historickým centrem, přes Karlův most až na Staroměstské náměstí.</p>
+                <a href="https://www.prague.eu/cs" target="_blank" rel="noreferrer">
+                  Informace o Praze <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="place">
+              <div class="place-image place-krumlov" role="img" aria-label="Ilustrace města u řeky"></div>
+              <div class="place-content">
+                <p class="place-category">Město · Jižní Čechy</p>
+                <h3>Český Krumlov</h3>
+                <p>Historické centrum a zámek nad meandrem Vltavy jsou skvělým cílem na jednodenní výlet.</p>
+                <a href="https://www.ckrumlov.info/cz/" target="_blank" rel="noreferrer">
+                  Informace o Českém Krumlově <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="place">
+              <div class="place-image place-mountains" role="img" aria-label="Ilustrace hor a slunce"></div>
+              <div class="place-content">
+                <p class="place-category">Příroda · Hory</p>
+                <h3>Krkonoše</h3>
+                <p>Horské stezky a výhledy lákají na pěší výlet v létě i na zimní procházku.</p>
+                <a href="https://www.krnap.cz/" target="_blank" rel="noreferrer">
+                  Informace o národním parku <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="naplanovat">
+        <div class="container plan">
+          <div>
+            <p class="eyebrow">Než vyrazíš</p>
+            <h2>Malý plán,<br>lepší výlet.</h2>
+          </div>
+          <ol class="checklist">
+            <li><span>01</span> Zkontroluj počasí a otevírací dobu.</li>
+            <li><span>02</span> Naplánuj cestu a ověř jízdní řády.</li>
+            <li><span>03</span> Vezmi si pohodlné boty a pití.</li>
+            <li><span>04</span> V přírodě respektuj značení a okolí.</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="zdroje">
+      <div class="container footer-content">
+        <p><strong>Výlety po Česku</strong> · Jednoduchá inspirace na cestu.</p>
+        <p>
+          Informace: <a href="https://www.prague.eu/cs" target="_blank" rel="noreferrer">Prague City Tourism</a>,
+          <a href="https://www.ckrumlov.info/cz/" target="_blank" rel="noreferrer">Český Krumlov</a> a
+          <a href="https://www.krnap.cz/" target="_blank" rel="noreferrer">KRNAP</a>.
+        </p>
+        <p>
+          Texty připravené s pomocí GitHub Copilotu v Copilot SDK ve VS Code.
+          Prompt: vytvoř jednoduchou jednostránkovou stránku s tipy na výlety po Česku.
+          Model nebyl uveden.
+        </p>
+        <nav class="validators" aria-label="Validátory kódu">
+          <a
+            href="https://validator.w3.org/nu/"
+            target="_blank"
+            rel="noreferrer"
+          >Ověřit HTML (vložit nebo nahrát)</a>
+          <a
+            href="https://jigsaw.w3.org/css-validator/"
+            target="_blank"
+            rel="noreferrer"
+          >Ověřit CSS (vložit nebo nahrát)</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
