@@ -229,6 +229,12 @@ h2 {
   font-size: 13px;
 }
 
+.validation-result {
+  padding: 12px 14px;
+  border-left: 3px solid #477859;
+  background: #eef4ed;
+}
+
 .validators {
   display: flex;
   flex-wrap: wrap;
