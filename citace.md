@@ -1,40 +1,47 @@
-# Citace a použité zdroje
+# Citace a použití AI
 
-## Informace o místech
+## Zdroje informací
 
-- Prague City Tourism. *Oficiální turistický portál Prahy*. Dostupné z:
+Stránka obsahuje odkazy na oficiální turistické a informační weby. Slouží
+čtenářům k dohledání dalších informací o uvedených místech:
+
+- Prague City Tourism. *Oficiální turistický portál Prahy*.
   <https://www.prague.eu/cs>
-- Český Krumlov. *Oficiální turistický portál města*. Dostupné z:
+- Český Krumlov. *Oficiální turistický portál města*.
   <https://www.ckrumlov.info/cz/>
-- Správa Krkonošského národního parku. *Oficiální stránky KRNAP*. Dostupné z:
+- Správa Krkonošského národního parku. *Oficiální stránky KRNAP*.
   <https://www.krnap.cz/>
-
-Odkazy slouží jako zdroje dalších informací k místům uvedeným na stránce.
 
 ## Použití generativní AI
 
-- Nástroj: GitHub Copilot v Copilot SDK ve VS Code.
-- Model: konkrétní model nebyl v dostupných informacích uveden.
-- Zadání: vytvořit jednoduchou jednostránkovou stránku s tipy na výlety po
-  Česku; následně ji zjednodušit a zaměřit na cestování.
-- Výstup: návrh textů stránky a zdrojové soubory HTML a CSS
-  (`index.html`, `style.css`).
-- Datum: 20. 10. 2026.
+- **Nástroj:** GitHub Copilot přes Copilot SDK ve VS Code.
+- **Model:** název konkrétního modelu nebyl v prostředí uveden.
+- **Datum práce:** 20. 10. 2026 a následné úpravy 27. 10. 2026.
+- **Výstupy:** návrh obsahu a vytvoření či úpravy souborů `index.html`,
+  `style.css`, `README.md` a tohoto souboru `citace.md`.
 
-## Průběh konverzace
+### Zadání a prompty
 
-Následující body shrnují zadání a jeho upřesnění v konverzaci s AI:
+Počáteční zadání bylo předáno jako obrázek školních pokynů a stručná zpráva
+„udělej to“. V průběhu práce uživatel zadání upřesnil těmito požadavky:
 
-1. Uživatel zadal vytvoření stránky podle přiloženého školního zadání.
-2. Po první verzi uživatel požádal o jednodušší řešení a upřesnil, že nechce
-   náhodné téma ani portfolio.
-3. Uživatel zvolil téma cestování nebo zajímavého místa. Stránka proto byla
-   změněna na jednoduché tipy na výlety po Česku.
-4. Uživatel požádal o funkční odkazy na HTML a CSS validátory. Po zjištění,
-   že web není publikovaný a validátor proto vrací chybu 404, byly zdrojové
-   soubory odeslány validátorům přímo a výsledek bez chyb byl uveden v patičce.
-5. Uživatel požádal o citace v novém souboru, což vedlo k vytvoření tohoto
-   souboru. Následně požádal o otevření stránky v prohlížeči a o doplnění
-   konverzace do citace.
+- „make it easy“
+- „nedělej portfolio na nějaké téma random a udělej to jednoduše“
+- „NEDĚLEJ PORTFOLIO“
+- Volba tématu: „Cestování nebo zajímavé místo“
+- „MUSÍŠ TAM DÁT LINK JAK TO PRošlo“ — upřesněno jako odkazy na validátory.
+- Požadavek na nový soubor s citacemi a doplnění shrnutí konverzace do citace.
+- Požadavek na upozornění, že jde o školní projekt OA Opava, a na ikony
+  validátorů v patičce.
 
-Toto je shrnutí průběhu, nikoli doslovný přepis celé konverzace.
+Zadání pro vytvořenou stránku bylo průběžně formulováno jako jednoduchá
+jednostránková stránka s tipy na výlety po Česku. Výsledkem je informační
+stránka, nikoli portfolio.
+
+Výše uvedené body jsou výběrem a shrnutím požadavků, nikoli úplným přepisem
+konverzace.
+
+## Validace
+
+Aktuální HTML a CSS byly odeslány do Nu HTML Checkeru a W3C CSS validátoru.
+Výsledek poslední kontroly a datum jsou uvedeny v patičce stránky.

@@ -28,6 +28,14 @@ a:hover {
   margin: 0 auto;
 }
 
+.school-notice {
+  padding: 6px 20px;
+  background: #315f48;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+}
+
 .site-header {
   border-bottom: 1px solid #e5e8e3;
 }
@@ -240,6 +248,17 @@ h2 {
   flex-wrap: wrap;
   gap: 18px;
   font-size: 13px;
+}
+
+.validators a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.validators a span {
+  color: #315f48;
+  font-weight: 700;
 }
 
 @media (max-width: 700px) {

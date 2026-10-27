@@ -21,4 +21,4 @@ Konkrétní model nebyl uveden.
 ## Validace
 
 Zdrojové soubory `index.html` a `style.css` byly odeslány do Nu HTML Checkeru
-a W3C CSS validátoru dne 20. 10. 2026. Oba validátory vrátily nula chyb.
+a W3C CSS validátoru dne 27. 10. 2026. Oba validátory vrátily nula chyb.
